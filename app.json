@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "aha-acls-clone",
+    "slug": "aha-acls-clone",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
