@@ -5,6 +5,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5eeada8d-8af8-41bd-99e9-ff92fdeeb2e6"
+      }
+    },
+    "owner": "876pol"
   }
 }
