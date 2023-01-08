@@ -7,20 +7,24 @@ const styles = StyleSheet.create({
         height: undefined,
     },
     home_container: {
+        height: "100%",
         display: "flex",
         justifyContent: "center",
     },
     home_screen_button: {
         fontSize: 20,
         textAlign: "center",
-        color: "white"
+        fontWeight: "bold",
+        color: "#BB0000"
     },
     home_screen_button_bk: {
         padding: 20,
         marginHorizontal: 20,
         marginVertical: 10,
-        borderRadius: 10,
-        backgroundColor: "red",
+        borderRadius: 8,
+        backgroundColor: "#FFC5C5",
+        borderColor: "#FFB0B0",
+        borderWidth: 2
     },
     row_button: {
         display: "flex",
@@ -28,16 +32,19 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingHorizontal: 20,
         paddingVertical: 10,
-        backgroundColor: "#DDDDDD"
+        backgroundColor: "#E7E7E7",
+        borderColor: "#C0C0C0",
+        borderWidth: "1",
     },
     row_button_text: {
+        flex: "1 1 0",
         textAlign: "center",
         textAlignVertical: "center",
         fontSize: 16,
         padding: 8,
-        fontFamily: (Platform.OS === "ios") ? "Menlo-Regular" : "monospace",
     },
     row_button_button: {
+        flex: "1 1 0",
         borderRadius: 10,
         backgroundColor: "#007AFF",
     },
@@ -55,8 +62,10 @@ const styles = StyleSheet.create({
         padding: 10,
         marginHorizontal: 15,
         margin: 5,
-        borderRadius: 10,
-        backgroundColor: "#DDDDDD"
+        borderRadius: 8,
+        backgroundColor: "#E7E7E7",
+        borderColor: "#C0C0C0",
+        borderWidth: 1
     },
     expandable_list_title: {
         fontSize: 16,

@@ -102,13 +102,13 @@ const CardiacArrest = ({ navigation, route }) => {
                     route.params.modalVisible = !route.params.modalVisible;
                 }}
             >
-                <SafeAreaView style={{flex: 1}}>
-                    <View style={{...styles.row_button, backgroundColor: "#FFFFFF"}}>
+                <SafeAreaView style={{ flex: 1 }}>
+                    <View style={styles.row_button}>
                         <Button
                             title="Reset"
                             onPress={() => { route.params.log = []; route.params.modalVisible = !route.params.modalVisible; }}
                         />
-                        <Text style={{fontSize: 18, paddingTop: 8}}>Code Logs</Text>
+                        <Text style={{ fontSize: 18, paddingTop: 8 }}>Code Logs</Text>
                         <Button
                             title="Close"
                             onPress={() => route.params.modalVisible = !route.params.modalVisible}
@@ -175,7 +175,7 @@ const CardiacArrest = ({ navigation, route }) => {
             </View>
             <ScrollView>
                 <Image
-                    style={{ ...styles.image, "aspectRatio": 0.60 }}
+                    style={{ ...styles.image, "aspectRatio": 0.54 }}
                     source={require('./img/cardiac_arrest.png')} />
                 {ExpandableList(CONTENT)}
             </ScrollView>

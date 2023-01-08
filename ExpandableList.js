@@ -7,16 +7,17 @@ const ExpandableList = (content) => {
     const components = [];
     for (let i = 0; i < content.length; i++) {
         components.push((
-            <View style={styles.expandable_list_group}>
-                <TouchableOpacity
-                    onPress={() => {
-                        setExpanded(expanded.map((value, index) => {
-                            return (index == i) ? !value : value;
-                        }));
-                    }}
-                >
+            <TouchableOpacity 
+                style={styles.expandable_list_group}
+                activeOpacity={0.7}
+                onPress={() => {
+                    setExpanded(expanded.map((value, index) => {
+                        return (index == i) ? !value : value;
+                    }));
+                }}>
+                <View>
                     <Text style={styles.expandable_list_title}>{content[i]["title"]}</Text>
-                </TouchableOpacity>
+                </View>
                 {
                     expanded[i] ? (
                         <View>
@@ -24,7 +25,7 @@ const ExpandableList = (content) => {
                         </View>
                     ) : (<></>)
                 }
-            </View>
+            </TouchableOpacity>
         ));
     }
     return <View style={styles.expandable_list_container}>{components}</View>

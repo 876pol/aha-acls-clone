@@ -20,7 +20,7 @@ const Home = ({ navigation }) => {
         "modalVisible": false,
     }
     return (
-        <SafeAreaView style={{ ...styles.container, ...styles.home_container }}>
+        <SafeAreaView style={styles.home_container}>
             <TouchableOpacity
                 style={styles.home_screen_button_bk}
                 onPress={() =>
