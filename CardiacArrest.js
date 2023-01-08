@@ -42,7 +42,7 @@ Second dose: 0.5-0.75 mg/kg.`
     {
         "title": "Return of Spontaneous Circulation (ROSC)",
         "description": `- Pulse and blood pressure 
-- Abrupt sustained increase in PETC02 (typically 240 mm Hg) 
+- Abrupt sustained increase in PETCO_2 (typically 240 mm Hg) 
 - Spontaneous arterial pressure waves with intra-arterial monitoring`
     }
     ,
