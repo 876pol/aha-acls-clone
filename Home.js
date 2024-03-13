@@ -1,5 +1,4 @@
-import { View, Button, SafeAreaView, Text } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { View, Button, SafeAreaView, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 const Separator = () => (
